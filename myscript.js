@@ -26,41 +26,18 @@ function LongestPalindrome(texts){
             let condition1 = texts.slice(i,j)
             let condition2 = Array.from(texts.slice(i,j)).reverse().join('')
             if(condition1 === condition2){
-                document.write(`<h2>Full Text is : ${texts}</h2>`)
-                document.write(`<h2>Longest palindrome is : ${condition1}</h2>`)
                 flag = 1
-                break
+                return condition1
             }   
         }
         if (flag == 1) {
         break
         }
     }
-    return 0
 }
 
-
-
-
-// let text = "TusharMOMMOMrwes"
-// function LongestPalindrome(texts){
-//     flag = 0;
-//     for(i = 0; i<texts.length; i++){
-//         for(j=texts.length; j>i+1; j--){
-//             let condition1 = texts.slice(i,j)
-//             let condition2 = Array.from(texts.slice(i,j)).reverse().join('')
-//             if(condition1 === condition2){
-//                 document.write(`<h2>Full Text is : ${texts}</h2>`)
-//                 document.write(`<h2>Longest palindrome is : ${condition1}</h2>`)
-//                 flag = 1
-//                 break
-//             }   
-//         }
-//         if (flag == 1) {
-//         break
-//         }
-//     }
-//     return 0
-// }
+let palindrome = LongestPalindrome(text)
+document.write(`<h2>Full Text is : ${text}</h2>`)
+document.write(`<h2>Longest palindrome is : ${palindrome}</h2>`)
 
 
