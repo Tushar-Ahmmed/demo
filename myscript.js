@@ -57,20 +57,41 @@
 //     console.log(num,"is Prime");
 // }
 
-function sumAllPrime(num){
-    let sumprime = 0
+// function sumAllPrime(num){
+//     let sumprime = 0
    
-    for (j=2; j<=num; j++){
-        let prime = true
-        for(k=2; k <= Math.sqrt(j); k++){
-            if(j%k == 0)
-                prime = false
-        }
-        if(prime)
-            sumprime += j
+//     for (j=2; j<=num; j++){
+//         let prime = true
+//         for(k=2; k <= Math.sqrt(j); k++){
+//             if(j%k == 0)
+//                 prime = false
+//         }
+//         if(prime)
+//             sumprime += j
+//     }
+//     return sumprime
+// }
+
+// console.log(sumAllPrime(10));
+// console.log(sumAllPrime(977));
+
+
+// for (var i = 0; i < 5; i++) {
+//     setTimeout(() => {
+//         console.log("i = ",i);
+//     }, 1000);
+// }
+// console.log('value of I out of the loop', i);
+
+
+function myFunc(){
+    console.log(data);
+    var data = "Hello World"
+
+    return 0
+    function data(){
+        console.log("data Func");
     }
-    return sumprime
 }
 
-console.log(sumAllPrime(10));
-console.log(sumAllPrime(977));
+myFunc()
